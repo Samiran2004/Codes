@@ -80,6 +80,6 @@ public class CheckPalindromeLinkedlist {
         list.insert(2);
         list.insert(1);
         list.display();
-        System.out.println("The list is palindrome: "+ list.isPalindrome());
+        System.out.println("The list is palindrome: " + list.isPalindrome());
     }
 }

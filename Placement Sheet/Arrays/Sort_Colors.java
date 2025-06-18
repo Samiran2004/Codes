@@ -24,6 +24,8 @@ public class Sort_Colors {
         System.out.print("After sorting using optimized method: ");
         sortColors(arr);
         System.out.println(Arrays.toString(arr));
+
+        input.close();
     }
 
     // Brute-Force

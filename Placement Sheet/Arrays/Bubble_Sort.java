@@ -14,6 +14,7 @@ public class Bubble_Sort {
         System.out.println("Before sorting the array is: " + Arrays.toString(arr));
         bubbleSort(arr);
         System.out.println("After sorting the array is : " + Arrays.toString(arr));
+        input.close();
     }
 
     private static void bubbleSort(int[] arr) {

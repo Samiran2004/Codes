@@ -12,6 +12,7 @@ public class Selection_Sort {
             System.out.printf("Enter %d number element of the array: ", i + 1);
             arr[i] = input.nextInt();
         }
+        input.close();
 
         System.out.println("Array before sorting using selection sort algorithm: " + Arrays.toString(arr));
         selectionSort(arr);

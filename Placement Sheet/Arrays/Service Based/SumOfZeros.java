@@ -17,6 +17,7 @@ public class SumOfZeros {
             }
             matrix.add(currentRow);
         }
+        input.close();
 
         System.out.println(coverageOfMatrix(matrix));
     }

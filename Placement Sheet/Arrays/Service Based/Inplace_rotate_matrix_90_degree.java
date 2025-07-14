@@ -24,5 +24,5 @@ public class Inplace_rotate_matrix_90_degree {
         }
     }
 
-    private static
+    // private static
 }

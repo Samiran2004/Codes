@@ -12,9 +12,9 @@ public class Cyclically_Rotate_an_Array_by_One {
             arr[i] = input.nextInt();
         }
         input.close();
-        System.out.println("Original array: "+ Arrays.toString(arr));
+        System.out.println("Original array: " + Arrays.toString(arr));
         rotateArrayByOne(arr);
-        System.out.println("Rotated array: "+ Arrays.toString(arr));
+        System.out.println("Rotated array: " + Arrays.toString(arr));
     }
 
     private static void rotateArrayByOne(int[] arr) {

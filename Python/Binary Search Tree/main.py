@@ -1,4 +1,3 @@
-import math
 from TreeNode import Node
 
 class BST:

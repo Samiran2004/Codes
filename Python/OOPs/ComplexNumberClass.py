@@ -40,6 +40,52 @@ class ComplexNumber:
 
         return ans
 
+    def __sub__(self, other):
+        resultReal = 0
+        resultImg = 0
+
+        resultReal = self.real - other.real
+        resultImg = self.img - other.img
+
+        ans = ComplexNumber(resultReal, resultImg)
+
+        return ans
+
+    def __mul__(self, other):
+        resultReal = 0
+        resultImg = 0
+
+        resultReal = self.real * other.real - self.img * other.img
+        resultImg = self.real * other.img + other.real * self.img
+
+        ans = ComplexNumber(resultReal, resultImg)
+
+        return ans
+
+    def __truediv__(self, other):
+        resultReal = 0
+        resultImg = 0
+
+        den = other.real**2 + other.img**2
+
+
+        ans = self * ComplexNumber(other.real/den, (-1*other.img)/den)
+        return ans
+
+    def __eq__(self, other):
+        return self.real == other.real and self.img == other.img
+    def __ne__(self, other):
+        return self.real != other.real and self.img != other.img
+    def __lt__(self, other):
+        return self.real < other.real and self.img < other.img
+    def __le__(self, other):
+        return self.real <= other.real and self.img <= other.img
+    def __ge__(self, other):
+        return self.real >= other.real and self.img >= other.img
+    def __gt__(self, other):
+        return self.real > other.real and self.img > other.img
+
+
     def conjugate(self):
         self.img = self.img*-1
         if self.real == 0:
@@ -58,4 +104,8 @@ cn2 = ComplexNumber(4, 5)
 # print(cn1)
 # cn1.conjugate()
 
-print(cn1 + cn2)
+# print(cn1 + cn2)
+# print(cn1 - cn2)
+# print(cn1 * cn2)
+# print(cn1/cn2)
+print(cn1 == cn2)

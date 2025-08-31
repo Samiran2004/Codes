@@ -1,8 +1,10 @@
 class Student:
+    numberOfStudents = 0
     def __init__(self, name, roll_number, percentage):
         self.name = name
         self.roll_number = roll_number
         self.percentage = percentage
+        Student.numberOfStudents += 1
 
     def say_hello(self):
         print(f"Hello {self.name}, How are you!")
@@ -30,3 +32,5 @@ student2.say_hello()
 print(student2.roll_number)
 print(student2.percentage)
 student2.play()
+
+print(student2.numberOfStudents)
